@@ -1,89 +1,388 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en-US">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8">
+  <title>HKMMS</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Sharad Gadhiya">
+  <meta name="generator" content="Hugo 0.82.0" />
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+
+  <!-- multilingual SEO optimizations -->
+  
+
+  
+  <meta property="og:title" content="HKMMS" />
+<meta property="og:description" content="This is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+
+
+  
+  
+
+</head><body id="body">
+	<div class="dividers">
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div>
+<!-- preloader start -->
+<div class="preloader">
+  <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+  </div>
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="nav-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/">
+            
+            <img class="img-fluid" width="120px" src="/images/logo.png" alt="HKMMS">
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <img src="/images/hamburger-icon.png" class="img-fluid" alt="menu">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="/career">Services</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="/#products">Advantages</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="/#contact">Contact</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="/#mission">About</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
+</header>
+<!-- /navigation -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+<section class="hero-slider">
+  <div class="container-fluid p-0 m-0">
+    <div class="row m-0">
+      <div class="col-12 p-0 ml-auto">
+        <div class="hero-slider-wrapper">
+          <div class="item">
+            <div class="item-image image-reveal" style="animation-delay: 2s;">
+              <img src="/images/hero-image/hero-slider-01.jpg" alt="slider-image">
+            </div>
+            <div class="content">
+              <h2>
+                <span class="rev">
+                  HKM Medical Solutions!
+                </span>
+              </h2>
+              <h3>providing the best medical soutions!</h3>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+        <div class="scroll">
+          <h6>SCROLL</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mission" id="mission">
+  <div class="bg">
+    <img src="/images/section-bg.jpg" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="right-shape">
+    <img src="/images/right-shape.png" class="img-fluid" alt="right-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>MISSION</span>
+        </div>
+        <div class="mission-content">
+          <h2><span class="rev">Mission</span></h2>
+          <p>In the ever fast pace moving world of today, we strive to assist you in providing the best care!</p>
+
+          <div class="video image-reveal">
+            <a class="video-play"
+              data-video="https://www.youtube.com/embed/ResipmZmpDU?autoplay=1&showinfo=0&controls=0">
+              <img src="/images/video-thumb.jpg" class="img-fluid" alt="video-thumb">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="vision">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>DOCTORS</span>
+        </div>
+        <div class="visions">
+          
+          <div class="vision-item">
+            <div class="image image-reveal">
+              <img src="/images/vision/vision-01.jpg" class="img-fluid" alt="vision-thumb">
+            </div>
+            <div class="text-content">
+              <h3>Doctors First</h3>
+              <p>while praticing you have enough to worry about!</p>
+            </div>
+          </div>
+          
+          <div class="vision-item">
+            <div class="image image-reveal">
+              <img src="/images/vision/vision-02.jpg" class="img-fluid" alt="vision-thumb">
+            </div>
+            <div class="text-content">
+              <h3>Always Availible!</h3>
+              <p>You will have a direct contact and a backup so that your always taken care of!</p>
+            </div>
+          </div>
+          
+          <div class="vision-item">
+            <div class="image image-reveal">
+              <img src="/images/vision/vision-03.jpg" class="img-fluid" alt="vision-thumb">
+            </div>
+            <div class="text-content">
+              <h3>Relax!</h3>
+              <p>Relax we are here for you!</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="products" id="products">
+  <div class="bg">
+    <img src="/images/section-bg-2.jpg" class="img-fluid" alt="section-bg">
+  </div>
+  <div class="left-shape">
+    <img src="/images/left-shape.png" class="img-fluid" alt="left-shape">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>History</span>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="text-block">
+          <h2><span class="rev">Trust</span>
+          </h2>
+          <p>Trust us we have History in the Feild!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+      <div class="col-lg-10 ml-auto p-0">
+        <div class="product-slider-wrapper">
+          
+          <div class="product-item">
+            <img src="/images/product/product-03.jpg" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>10 years!</h5>
+                <p>We have been working in the feild for 10 years!</p>
+                <a href="/"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/images/product/product-02.jpg" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>Hippa</h5>
+                <p>We are certified and will only use software that is certified as well to make sure you and your patiants are safe!</p>
+                <a href="/"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="/images/product/product-03.jpg" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>Local</h5>
+                <p>We operate in the US, meaning we will answer during buissness hours, and if you are working the late nights, we can have our offshore to assist.  That means 24/7 support!</p>
+                <a href="/"></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <span>CONTACT US</span>
+        </div>
+      </div>
+      <div class="col-lg-7 ml-auto">
+        <div class="text-block">
+          <h2><span class="rev">reach us</span></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-div">
+    
+    <div id="map" data-center-lat="" data-center-lng="" data-position-lat="" data-position-lng="" data-marker="/" data-name="HKMMS"></div>
+    
+    <div class="office">
+      <div class="contents">
+        <img src="/images/map-bg.jpg" alt="office">
+        <div class="address">
+          <h2></h2>
+          <ul class="social-list list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer">
+	<div class="call-to-action text-center">
+		<h2>Take a look at what we have to offer YOU!</h2>
+		<a href="/career">Services</a>
+	</div>
+</footer>
+
+
+
+<!-- Google Map API -->
+
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm border ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+
 </html>
