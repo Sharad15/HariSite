@@ -2,76 +2,9 @@
 banner:
   enable : true
   title : "HKM Medical Solutions!"
-  content : "providing the best medical soutions!"
+  content : "Site Under Construction"
   image : "images/hero-image/hero-slider-01.jpg"
   button:
     enable : false
     label : "WHAT WE DO"
     link : "#products"
-
-#################### Mission #####################
-mission:
-  enable : true
-  title : "Mission"
-  section : "MISSION"
-  content : "In the ever fast pace moving world of today, we strive to assist you in providing the best care! "
-  video_thumb: "images/video-thumb.jpg"
-  video_id: "ResipmZmpDU"
-
-
-#################### Vission #####################
-vision:
-  enable : true
-  section : "DOCTORS"
-  vision_item:
-  - title : "Doctors First"
-    image : "images/vision/vision-01.jpg"
-    content : "while praticing you have enough to worry about!"
-    
-  - title : "Always Availible!"
-    image : "images/vision/vision-02.jpg"
-    content : "You will have a direct contact and a backup so that your always taken care of!"
-    
-  - title : "Relax!"
-    image : "images/vision/vision-03.jpg"
-    content : "Relax we are here for you!"
-
-
-#################### product ####################
-product:
-  enable : true
-  section : "History"
-  title : "Trust"
-  content : "Trust us we have History in the Feild! "
-  product_item:
-  - title : "10 years!"
-    image : "images/product/product-03.jpg"
-    content : "We have been working in the feild for 10 years!"
-    
-    
-  - title : "Hippa"
-    image : "images/product/product-02.jpg"
-    content : "We are certified and will only use software that is certified as well to make sure you and your patiants are safe!"
-    
-    
-  - title : "Local"
-    image : "images/product/product-03.jpg"
-    content : "We operate in the US, meaning we will answer during buissness hours, and if you are working the late nights, we can have our offshore to assist.  That means 24/7 support!"
-   
-
-
-###################### Contact ####################
-contact:
-  enable : true
-  section : "CONTACT US"
-  title : "reach us"
-  image : "images/map-bg.jpg"
-  content : ""
-
-  
-################### call to action #################
-call_to_action:
-  enable : true
-  title : "Take a look at what we have to offer YOU! "
-  button_label : "Services"
-  button_link : "career"
